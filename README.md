@@ -182,9 +182,6 @@ We'll use three main tables in our SQL database.
 6. **Statelessness:** The API is stateless.
 
 ### 5. Recommended Technology Stack
-
-- **Frontend Framework:**
-    - **React.js:** A powerful library for building user interfaces.
 - **Backend Framework:**
     - **Node.js with Express.js:** A popular choice for building lightweight and fast REST APIs.
 - **Database:**
