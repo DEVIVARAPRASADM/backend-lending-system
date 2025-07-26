@@ -1,0 +1,50 @@
+### Create customer
+POST http://localhost:3000/api/v1/customers
+Content-Type: application/json
+
+{
+  "name": "Rupesh"
+}
+
+###
+
+### Get all customers
+GET http://localhost:3000/api/v1/customers
+
+###
+
+### Create a new loan
+POST http://localhost:3000/api/v1/loans
+Content-Type: application/json
+
+{
+  "customer_id": "fc97f1fb-3d70-4ac8-812f-49838f623cf5",
+  "loan_amount": 10000,
+  "interest_rate_yearly": 10,
+  "loan_period_years": 1
+}
+
+###
+
+### Get all loans
+GET http://localhost:3000/api/v1/loans
+
+###
+
+### Create a payment for a loan### Create a payment for a loan
+POST http://localhost:3000/api/v1/payments/04683382-0269-433a-8bdb-9628d0572d54
+Content-Type: application/json
+
+{
+  "amount": 2000,
+  "payment_type": "EMI"
+}
+
+###
+
+### Get all payments for a loan
+GET http://localhost:3000/api/v1/payments/04683382-0269-433a-8bdb-9628d0572d54
+
+### Get Customer Overview
+GET http://localhost:3000/api/v1/customers/<fc97f1fb-3d70-4ac8-812f-49838f623cf5>/overview
+Accept: application/json
